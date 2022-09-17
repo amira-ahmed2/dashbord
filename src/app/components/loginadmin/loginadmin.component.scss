@@ -1,0 +1,25 @@
+.body{
+background-color: #FDFDFD !important;
+color: #FDFDFD;
+}
+.layer {
+	width: 100vw;
+	height: 100vh;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+
+}
+.headerjumia{
+  background-color: #F68B1E;
+  color: #FDFDFD;
+
+}
+.btnprimary{
+  background-color: #F68B1E;
+  color: #FDFDFD;
+  &:hover {
+    background-color: #e57b11;
+  color: #f1f1f1;
+  }
+}
