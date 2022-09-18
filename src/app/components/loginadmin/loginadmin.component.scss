@@ -1,25 +1,61 @@
-.body{
-background-color: #FDFDFD !important;
-color: #FDFDFD;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$ligtgray:#FDFDFD;
+$orangjumia:#F68B1E;
+$gray:#ababab;
+
 .layer {
 	width: 100vw;
 	height: 100vh;
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
 
 }
 .headerjumia{
-  background-color: #F68B1E;
-  color: #FDFDFD;
+  background-color: $orangjumia;
+  color: $ligtgray;
+  font-family: 'Kanit', sans-serif;
+
+}
+.iconlogojumia{
+  color:  $orangjumia;
+  background-color:$ligtgray;
 
 }
 .btnprimary{
-  background-color: #F68B1E;
-  color: #FDFDFD;
+  background-color: $orangjumia;
+  color: $ligtgray;
   &:hover {
     background-color: #e57b11;
-  color: #f1f1f1;
+  color:$ligtgray;
   }
 }
+
+.body{
+  border: 1px $gray solid !important;
+  background-color: #FDFDFD !important;
+  box-shadow: none;
+  color: $gray !important;
+
+&:hover{
+  border: 1px $gray solid !important;
+  background-color: #FDFDFD !important;
+  color: $gray !important;
+
+}
+&:focus{
+  border: 1px solid $orangjumia !important;
+  box-shadow: none;
+  background-color: #FDFDFD !important;
+  color: $gray !important;
+
+}
+}
+input:checked{
+  background-color: $gray !important;
+  border-color:$gray ;
+  box-shadow: none;
+  &:focus ,&:hover{
+    box-shadow: none;
+
+  }
+}
+
