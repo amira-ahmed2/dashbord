@@ -1,3 +1,55 @@
+$info:#34C997;
+.textdark{
+  color: gray;
+}
+tbody
+tr
+td,table>thead>tr{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.52) !important;
+
+}
+
+
+// search
+.test{
+  border: 0px transparent solid !important;
+&:hover{
+  border: 0px solid transparent;
+
+}
+&:focus{
+  border: 0px solid transparent;
+  box-shadow: none;
+}
+}
+// btn info edit delete
+.btninfone{
+border:1px solid  $info;
+border-top-left-radius: 40%;
+border-bottom-left-radius:40% ;
+color:  $info;
+&:hover{
+  border:1px solid  $info;
+border-top-left-radius: 40%;
+border-bottom-left-radius:40% ;
+color: white;
+background-color:  $info;
+}
+
+}
+.btninfotwo{
+  border:1px solid  $info;
+  border-top-right-radius: 50%;
+border-bottom-right-radius:50% ;
+color: $info;
+&:hover{
+  border:1px solid  $info;
+  border-top-right-radius: 50%;
+border-bottom-right-radius:50% ;
+color: white;
+background-color: $info;
+}
+}
 .test{
   border: 0px transparent solid !important;
 &:hover{
@@ -20,10 +72,6 @@
       -o-transition: all 2.2s 0s ease;
       transition: all 2.2s 0s ease;
     }
-}
-
-#search:focus{
-border-color: ababab !important;
 }
 // inputform
 .inputform{

@@ -9,8 +9,6 @@ import { LoginadminComponent } from './components/loginadmin/loginadmin.componen
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { UserComponent } from './components/user/user.component';
-import { VendorComponent } from './components/vendor/vendor.component';
 import { UndefinedpageComponent } from './components/undefinedpage/undefinedpage.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
@@ -22,8 +20,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    UserComponent,
-    VendorComponent,
     UndefinedpageComponent,
     DashboardComponent
   ],

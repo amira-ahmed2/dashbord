@@ -1,0 +1,23 @@
+.test{
+  border: 0px transparent solid !important;
+&:hover{
+  border: 0px solid transparent;
+
+}
+&:focus{
+  border: 0px solid transparent;
+  box-shadow: none;
+}
+}
+.buttonAdd{
+  border: 1px solid #ababab;
+
+    &:hover{
+      border: 0px solid transparent;
+      background-color: #F68B1E;
+      -webkit-transition: all 2.2s 0s ease;
+      -moz-transition: all 2.2s 0s ease;
+      -o-transition: all 2.2s 0s ease;
+      transition: all 2.2s 0s ease;
+    }
+}
