@@ -4,12 +4,8 @@ $info:#34C997;
 }
 tbody
 tr
-td{
-  border-bottom: 1px solid gray !important;
-
-}
-table>thead>tr>th{
-  border-bottom: 1px solid rgb(211, 49, 49) !important;
+td,table>thead>tr{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.52) !important;
 
 }
 // search

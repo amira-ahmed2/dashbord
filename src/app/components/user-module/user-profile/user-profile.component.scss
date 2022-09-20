@@ -1,0 +1,20 @@
+$textColor:#56606E;
+$bgCart:#88AAF3;
+$bgWichList:#ddaa04;
+$bgVoucher:#34C997;
+.textBody{
+  color: $textColor;
+}
+.bgCart
+{
+  background-color:$bgCart ;
+}
+.bgWichList{
+  background-color: $bgWichList;
+}
+.bgVoucher{
+  background-color: $bgVoucher;
+  i{
+    font-size: 150%;
+  }
+}
