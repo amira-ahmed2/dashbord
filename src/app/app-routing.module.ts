@@ -19,6 +19,9 @@ const routes: Routes = [
   {path: 'admins',
   loadChildren: () => import('src/app/components/admin-module/admin-module.module').then(m => m.AdminModuleModule)
 },
+{path: 'products',
+loadChildren: () => import('src/app/components/products/products.module').then(m => m.ProductsModule)
+},
   ]},
   {path:'**',component:UndefinedpageComponent}
 ];

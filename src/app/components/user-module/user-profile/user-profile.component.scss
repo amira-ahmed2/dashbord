@@ -18,3 +18,29 @@ $bgVoucher:#34C997;
     font-size: 150%;
   }
 }
+.scrolls
+{
+  height: 60vh !important;
+  overflow: hidden;
+  &:hover{
+    overflow: auto !important;
+
+  }
+
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #d3d3d3;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#d3d3d3;
+  border-radius: 10px;
+
+}

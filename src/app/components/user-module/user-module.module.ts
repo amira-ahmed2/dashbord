@@ -12,8 +12,8 @@ const routes: Routes = [
   {path:'',redirectTo:'/users/userlist',pathMatch:'full'},
       {path:'userlist',component:UserListComponent},
       {path:'',component:SubuserlayoutComponent,children:[
-        {path:'userlist/profile',component:UserProfileComponent},
-        {path:'userlist/edit',component:UserEditComponent},
+      {path:'userlist/profile',component:UserProfileComponent},
+      {path:'userlist/edit',component:UserEditComponent},
       ]},
 
     ];

@@ -1,0 +1,26 @@
+label{
+  color: #56606E !important;
+}
+// inputform
+.inputform{
+  border: 1px #F3F3F3 solid !important;
+  background-color: #FDFDFD !important;
+&:hover{
+  border: 1px #F3F3F3 solid !important;
+  background-color: #FDFDFD !important;
+}
+&:focus{
+  border: 1px #F3F3F3 solid !important;
+  box-shadow: none;
+  background-color: #FDFDFD !important;
+}
+&:active{
+  border: 1px #F3F3F3 solid !important;
+  box-shadow: none;
+  background-color: #FDFDFD !important;
+}
+}
+button{
+  color: #FDFDFD;
+  justify-items: flex-end;
+}

@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vendor-profile.component.scss']
 })
 export class VendorProfileComponent implements OnInit {
-
-  constructor() { }
+ typeOrder:string;
+  constructor() {
+    this.typeOrder='COMPLETED'
+   }
 
   ngOnInit(): void {
   }

@@ -2,27 +2,90 @@
   <div class="border-bottom p-1">
     <img src="assets/Capture.PNG" alt="jumialogo" />
   </div>
-  <!-- go to dashbord component-->
-  <div class="border-bottom p-1 d-flex flex-row ps-3">
-    <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
-      <i class="bi bi-house-door " routerLinkActive="active"></i> dashboard</a>
-  </div>
-<!-- go to users list component-->
-  <div class="border-bottom ps-3 ">
-    <div class="p-1 d-flex flex-row ">
-      <a class="nav-link " routerLink="/users/userlist" routerLinkActive="active">
-        <i class="bi bi-people" routerLinkActive="active"></i> users</a>
+  <div class="scrolls h-50">
+    <!-- go to dashbord component-->
+    <div class="border-bottom p-1 d-flex flex-row ps-3">
+      <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
+        <i class="bi bi-house-door" routerLinkActive="active"></i> dashboard</a
+      >
     </div>
-<!-- go to admin list component-->
-    <div class="p-1 d-flex flex-row py-3">
-      <a class="nav-link" routerLink="/admins/adminslist" routerLinkActive="active">
-        <i class="bi bi-building" routerLinkActive="active"></i>
-        admins</a>
+    <!-- go to users list component-->
+    <div class="border-bottom ps-3">
+      <div class="p-1 d-flex flex-row">
+        <a
+          class="nav-link"
+          routerLink="/users/userlist"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-people" routerLinkActive="active"></i> users</a
+        >
+      </div>
+      <!-- go to admin list component-->
+      <div class="p-1 d-flex flex-row py-3">
+        <a
+          class="nav-link"
+          routerLink="/admins/adminslist"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-building" routerLinkActive="active"></i>
+          admins</a
+        >
+      </div>
+      <!-- go to vendor list component -->
+      <div class="p-1 d-flex flex-row">
+        <a
+          class="nav-link"
+          routerLink="/vendors/vendorslist"
+          routerLinkActive="active"
+        >
+          <i class="bi bi-people" routerLinkActive="active"></i> vendors</a
+        >
+      </div>
     </div>
-    <!-- go to vendor list component -->
-    <div class="p-1 d-flex flex-row ">
-      <a class="nav-link " routerLink="/vendors/vendorslist" routerLinkActive="active">
-        <i class="bi bi-people" routerLinkActive="active"></i> vendors</a>
-    </div>
+
+      <!-- go to product ,order, catigory  component-->
+      <div class="border-bottom ps-3">
+            <!-- go to catigory list component-->
+        <div class="p-1 d-flex flex-row">
+          <a
+            class="nav-link"
+            routerLink="/users/userlist"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-hdd-stack" routerLinkActive="active"></i>catigory</a
+          >
+        </div>
+        <!-- go to products component-->
+        <div class="p-1 d-flex flex-row py-3">
+          <a
+            class="nav-link"
+            routerLink="/products/productslist"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-postcard" routerLinkActive="active"></i>
+              products</a
+          >
+        </div>
+        <!-- go to  orders component -->
+        <div class="p-1 d-flex flex-row">
+          <a
+            class="nav-link"
+            routerLink="/orders/orderslist"
+            routerLinkActive="active"
+          >
+            <i class="bi bi-cart3" routerLinkActive="active"></i>  orders</a
+          >
+        </div>
+          <!-- go to  reviws component -->
+          <div class="p-1 d-flex flex-row">
+            <a
+              class="nav-link"
+              routerLink="/orders/orderslist"
+              routerLinkActive="active"
+            >
+              <i class="bi bi-star-half" routerLinkActive="active"></i>  reviws</a
+            >
+          </div>
+      </div>
   </div>
 </div>
