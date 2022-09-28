@@ -1,0 +1,107 @@
+<div class="p-4 mx-5 text-wrap textdark">
+  <div class="d-flex flex-row justify-content-between">
+    <div>
+      <header class="h4">Review</header>
+    </div>
+    <div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/dashboard"> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Review</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="bg-white px-4 py-3 border-0 rounded-5 shadow-sm">
+    <!-- search products-->
+    <div
+      class="d-flex flex-row justify-content-start align-items-center text-center"
+    >
+      <p class="text-capitalize pt-1 mt-2 textdark">Search:</p>
+      <form class="d-flex d-md-block d-none" role="search">
+        <input
+          class="form-control me-2 rounded-5 w-auto bg-light inputform"
+          type="search"
+          placeholder="search..."
+          aria-label="Search"
+          id="search"
+        />
+      </form>
+    </div>
+
+    <!-- view products list -->
+    <table class="table table-borderless">
+      <thead>
+        <tr class="text-capitalize h6 text-secondary">
+          <th scope="col">Product</th>
+          <th scope="col">Name</th>
+          <th scope="col">Vendor</th>
+          <th scope="col">Ratings</th>
+          <th scope="col">Date</th>
+          <th scope="col">action</th>
+        </tr>
+      </thead>
+
+      <tbody class="table-group-divider p-4">
+        <tr class="textdark">
+          <td
+            class="py-2 text-capitalize"
+            routerLink="/products/productslist/details"
+          >
+            <img
+              [src]="imgTest"
+              class="rounded-3"
+              alt="img product"
+              [ngStyle]="{ width: '3.5vw' }"
+            />
+          </td>
+          <td class="py-3">baby shoes</td>
+          <td class="py-3">Mone Ahmed</td>
+          <td class="py-3">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star"></i>
+          </td>
+          <td class="py-3">Active</td>
+          <td class="py-3">1-1-2020</td>
+          <td>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn btninfone">Info</button>
+              <button
+                type="button"
+                class="btn btninfotwo dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- <span class="visually-hidden"></span> -->
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/products/productslist/details"
+                    >Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    routerLink="/products/productslist/addproduct"
+                    >Edit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/products/productslist"
+                    >Delete</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

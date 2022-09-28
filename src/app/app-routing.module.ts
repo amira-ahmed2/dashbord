@@ -28,9 +28,9 @@ loadChildren: () => import('src/app/components/categories/categories.module').th
 {path: 'orders',
 loadChildren: () => import('src/app/components/orders/orders.module').then(m => m.OrdersModule)
 },
-// {path: 'reviws',
-// loadChildren: () => import('src/app/components/reviws/reviws.module').then(m => m.ReviwsModule)
-// },
+{path: 'reviews',
+loadChildren: () => import('src/app/components/reviews/reviews.module').then(m => m.ReviewsModule)
+},
   ]},
   {path:'**',component:UndefinedpageComponent}
 ];
