@@ -22,6 +22,15 @@ const routes: Routes = [
 {path: 'products',
 loadChildren: () => import('src/app/components/products/products.module').then(m => m.ProductsModule)
 },
+{path: 'categories',
+loadChildren: () => import('src/app/components/categories/categories.module').then(m => m.CategoriesModule)
+},
+{path: 'orders',
+loadChildren: () => import('src/app/components/orders/orders.module').then(m => m.OrdersModule)
+},
+// {path: 'reviws',
+// loadChildren: () => import('src/app/components/reviws/reviws.module').then(m => m.ReviwsModule)
+// },
   ]},
   {path:'**',component:UndefinedpageComponent}
 ];

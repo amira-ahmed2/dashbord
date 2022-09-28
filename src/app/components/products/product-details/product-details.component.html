@@ -1,1 +1,26 @@
-<p>product-details works!</p>
+<div class="p-4">
+  <!-- part one header  -->
+  <div class="d-flex flex-row justify-content-between ">
+    <div>
+      <header>Product Detail</header>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/dashboard"> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Product</li>
+        </ol>
+      </nav>
+    </div>
+    <div>
+      <a
+        type="button"
+        class="buttonAdd btn"
+        data-bs-toggle="modal"
+        data-bs-whatever="@getbootstrap"
+        routerLink="/products/productslist"
+      >
+        Edit
+        </a>
+    </div>
+  </div>
+
+</div>

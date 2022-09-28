@@ -45,16 +45,26 @@
 
       <!-- go to product ,order, catigory  component-->
       <div class="border-bottom ps-3">
-            <!-- go to catigory list component-->
+            <!-- go to main-category list component-->
         <div class="p-1 d-flex flex-row">
           <a
             class="nav-link"
-            routerLink="/users/userlist"
+            routerLink="/categories/maincategory"
             routerLinkActive="active"
           >
-            <i class="bi bi-hdd-stack" routerLinkActive="active"></i>catigory</a
+            <i class="bi bi-hdd-stack" routerLinkActive="active"></i>main category</a
           >
         </div>
+           <!-- go to sub-category list component-->
+           <div class="p-1 d-flex flex-row">
+            <a
+              class="nav-link"
+              routerLink="/categories/subcategory"
+              routerLinkActive="active"
+            >
+              <i class="bi bi-view-stacked" routerLinkActive="active"></i>sub category</a
+            >
+          </div>
         <!-- go to products component-->
         <div class="p-1 d-flex flex-row py-3">
           <a
@@ -70,7 +80,7 @@
         <div class="p-1 d-flex flex-row">
           <a
             class="nav-link"
-            routerLink="/orders/orderslist"
+            routerLink="/orders/orderlist"
             routerLinkActive="active"
           >
             <i class="bi bi-cart3" routerLinkActive="active"></i>  orders</a
@@ -80,7 +90,7 @@
           <div class="p-1 d-flex flex-row">
             <a
               class="nav-link"
-              routerLink="/orders/orderslist"
+              routerLink="/reviws/reviwlist"
               routerLinkActive="active"
             >
               <i class="bi bi-star-half" routerLinkActive="active"></i>  reviws</a

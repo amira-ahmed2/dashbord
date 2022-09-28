@@ -1,0 +1,144 @@
+<div class="p-4 text-wrap">
+  <!-- part one header  -->
+  <div class="d-flex flex-row justify-content-between ">
+    <div>
+      <header class="h4">Main Catrgory</header>
+
+    </div>
+    <div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a routerLink="/dashboard"> Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Main Catrgory</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="d-flex flex-row flex-wrap justify-content-evenly textdark">
+    <!-- add new category -->
+
+<form class="border-0 rounded-5 shadow-sm bg-white px-4 py-3 formnewcat ">
+  <header class="h5 textdark">Add New Catrgory</header><hr>
+
+  <div class="mb-3">
+    <label for="NameCategory" class="form-label">Name</label>
+    <input type="text" class="form-control inputform rounded-4" id="NameCategory">
+  </div>
+  <div class="mb-3">
+    <label for="Slug" class="form-label">Slug</label>
+    <input type="text" class="form-control inputform rounded-4" id="Slug">
+   <small class="text-wrap text-lowercase fw-light">The "slug" is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</small>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Sort Description</label>
+    <textarea class="form-control inputform rounded-4" id="exampleFormControlTextarea1" rows="2" cols="5"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="floatingSelect" class="form-label">Parent Catygory</label>
+  <div class="form">
+    <select class="form-select inputform rounded-4 p-2" id="floatingSelect" aria-label="Floating label select example">
+      <option value="4" >Man</option>
+      <option value="1">Baby</option>
+      <option value="2"selected>Boy</option>
+      <option value="3" >Women</option>
+    </select>
+  </div>
+</div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Full Description</label>
+    <textarea class="form-control inputform rounded-4" id="exampleFormControlTextarea1" rows="4"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="ProductTags" class="form-label">Product Tags</label><small  class="text-wrap text-lowercase fw-light">(Type and make comma to separate tags)</small>
+    <input type="text" class="form-control inputform rounded-4 py-3" id="ProductTags">
+  </div>
+  <div><button type="button" class="btn btn-secondary rounded-3">Submit</button>
+  </div>
+</form>
+  <!-- view category list & search products-->
+<div class="bg-white  border-0 rounded-5 shadow-sm px-4 py-3">
+      <!-- search products-->
+      <div
+        class="d-flex flex-row justify-content-start align-items-center text-center"
+      >
+        <p class="text-capitalize pt-1 mt-2 textdark">Search: </p>
+        <form class="d-flex d-md-block d-none" role="search">
+          <input
+            class="form-control me-2 rounded-5 test w-auto bg-light inputform"
+            type="search"
+            placeholder="search..."
+            aria-label="Search"
+            id="search"
+          />
+        </form>
+      </div>
+
+  <!-- view category list -->
+    <table class="table  table-borderless">
+
+      <thead>
+        <tr class="text-capitalize h6 text-secondary">
+          <th scope="col">Thumb</th>
+          <th scope="col">Name</th>
+          <th scope="col">Main category</th>
+          <th scope="col">Product</th>
+          <th scope="col">total sell</th>
+          <th scope="col">status</th>
+          <th scope="col">Treding</th>
+          <th scope="col">action</th>
+
+        </tr>
+      </thead>
+
+      <tbody class="table-group-divider p-4">
+        <tr class="textdark">
+          <td class="py-2 text-capitalize" routerLink="/products/productslist/details">
+            <img [src]="imgTest" class="rounded-3" alt="img product" [ngStyle]="{'width':'3.5vw'}"/>
+          </td>
+          <td class="py-3"> shoes</td>
+          <td class="py-3">baby</td>
+          <td class="py-3">25 </td>
+          <td class="py-3">1303</td>
+          <td class="py-3">Active</td>
+          <td class="py-3">Top</td>
+          <td>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <button type="button" class="btn btninfone">Info</button>
+              <button
+                type="button"
+                class="btn btninfotwo dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <!-- <span class="visually-hidden"></span> -->
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" routerLink="/products/productslist/details"
+                    >Details</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/products/productslist/addproduct"
+                    >Edit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/products/productslist"
+                    >Delete</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+</div>

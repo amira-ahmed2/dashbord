@@ -1,0 +1,60 @@
+$info:#34C997;
+.textdark{
+  color: gray;
+}
+
+tbody
+tr
+td,table>thead>tr{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.52) !important;
+
+}
+// inputform
+.inputform{
+  border: 1px #F8F9FA solid !important;
+  background-color: #FDFDFD !important;
+&:hover{
+  border: 1px #F8F9FA solid !important;
+  background-color: #FDFDFD !important;
+}
+&:focus{
+  border: 1px solid#F8F9FA !important;
+  box-shadow: none;
+  background-color: #FDFDFD !important;
+}
+&:active{
+  border: 1px solid #F8F9FA !important;
+  box-shadow: none;
+  background-color: #FDFDFD !important;
+}
+}
+.formnewcat{
+  width: 30%!important;
+}
+.btninfone{
+  border:1px solid  $info;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius:40% ;
+  color:  $info;
+  &:hover{
+    border:1px solid  $info;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius:40% ;
+  color: white;
+  background-color:  $info;
+  }
+
+  }
+  .btninfotwo{
+    border:1px solid  $info;
+    border-top-right-radius: 50%;
+  border-bottom-right-radius:50% ;
+  color: $info;
+  &:hover{
+    border:1px solid  $info;
+    border-top-right-radius: 50%;
+  border-bottom-right-radius:50% ;
+  color: white;
+  background-color: $info;
+  }
+  }
